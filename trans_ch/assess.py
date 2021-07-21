@@ -1,8 +1,11 @@
+#第2问，评价全拼输入法
 import pandas as pd
 import numpy as np
 #load file
 data=pd.read_csv("../count_alp_f.csv",encoding='gbk')
 data.head()
+data=pd.DataFrame(data.drop(['v'],axis=1))
+#由于此次输入的文章中均未使用到v，故删去v的统计，方便后序信息熵的计算
 
 #standardize
 # 总指标数
@@ -45,7 +48,7 @@ W = np.array([W])
 
 # 保存 权重 为excel格式
 W1 = pd.DataFrame(W.T, index = n)
-W1.to_excel('../权重1.xlsx')
+W1.to_csv('../权重1.csv')
 
 #计算样本评价
 U = []
@@ -81,10 +84,9 @@ for i in n:
     U[i1] = U[i].rank(ascending=False)
 
 # 为样本综合得分排名
-U['综合得分  排名'] = U['综合得分'].rank(ascending=False)
+U['综合得分排名'] = U['综合得分'].rank(ascending=False)
 
 # 保存为excel文件
 U.to_csv('../综合得分.csv')
 
-U[:5]
 
