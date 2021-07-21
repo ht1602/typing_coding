@@ -6,12 +6,12 @@ gongchandang=py.get_pinyin(u"共产党宣言")
 print(gongchandang)
 
 #remove splitter
-#chapter1
+#chapter1 每次输入100个字（包括中文字符）
 gongchandangxuanyan=py.get_pinyin(u"一个幽灵，共产主义的幽灵，在欧洲游荡。"
-                   u"为了对这个幽灵进行神圣的围剿，旧欧洲的一切势力，"
-                   u"教皇和沙皇、梅特涅和基佐、法国的激进派和德国的警察，"
-                   u"都联合起来了。有哪一个反对党不被它的当政的敌人骂为共产党呢？"
-                   u"又有哪一个反对党不拿共产主义这个罪名去回敬更进步的反对党人和自己的反动敌人呢？",' ')
+                                  u"为了对这个幽灵进行神圣的围剿，旧欧洲"
+                                  u"的一切势力，教皇和沙皇、梅特涅和基佐、"
+                                  u"法国的激进派和德国的警察，都联合起来了。"
+                                  u"有哪一个反对党不被它的当政的敌人骂为共产党呢？又",' ')
 #统计每个字母出现频率
 a=gongchandangxuanyan.count("a")
 b=gongchandangxuanyan.count("b")
@@ -41,11 +41,12 @@ y=gongchandangxuanyan.count("y")
 z=gongchandangxuanyan.count("z")
 
 #chapter2
-gongchandangxuanyan=py.get_pinyin(u"有哪一个反对党不被它的当政的敌人"
-                                 u"骂为共产党呢？又有哪一个反对党不"
-                                 u"拿共产主义这个罪名去回敬更进步的"
-                                 u"反对党人和自己的反动敌人呢？一个"
-                                 u"幽灵，共产主义的幽灵，在欧洲游荡。",' ')
+gongchandangxuanyan=py.get_pinyin(u"有哪一个反对党不拿共产主义这个"
+                                  u"罪名去回敬更进步的反对党人和自"
+                                  u"己的反动敌人呢？从这一事实中可"
+                                  u"以得出两个结论：共产主义已经被"
+                                  u"欧洲的一切势力公认为一种势力；"
+                                  u"现在是共产党人向全世界公开说明自己的观点、自己的目",' ')
 a1=gongchandangxuanyan.count("a")
 b1=gongchandangxuanyan.count("b")
 c1=gongchandangxuanyan.count("c")
@@ -74,14 +75,13 @@ y1=gongchandangxuanyan.count("y")
 z1=gongchandangxuanyan.count("z")
 
 #chapter3
-gongchandangxuanyan=py.get_pinyin(u"从这一事实中可以得出两个结论："
-                                 u"共产主义已经被欧洲的一切势力公认为一种势力；"
-                                 u"现在是共产党人向全世界公开说明自己的观点、"
-                                 u"自己的目的、自己的意图并且拿党自己的宣言来"
-                                 u"反驳关于共产主义幽灵的神话的时候了。为了这"
-                                 u"个目的，各国共产党人集会于伦敦，拟定了如下"
-                                 u"的宣言，用英文、法文、德文、意大利文、弗拉"
-                                 u"芒文和丹麦文公布于世。",' ')
+gongchandangxuanyan=py.get_pinyin(u"的、自己的意图并且拿党自己的"
+                                  u"宣言来反驳关于共产主义幽灵的"
+                                  u"神话的时候了。为了这个目的，"
+                                  u"各国共产党人集会于伦敦，拟定"
+                                  u"了如下的宣言，用英文、法文、"
+                                  u"德文、意大利文、弗拉芒文和丹"
+                                  u"麦文公布于世。一、资产者和无产者",' ')
 a2=gongchandangxuanyan.count("a")
 b2=gongchandangxuanyan.count("b")
 c2=gongchandangxuanyan.count("c")
@@ -110,14 +110,11 @@ y2=gongchandangxuanyan.count("y")
 z2=gongchandangxuanyan.count("z")
 
 #chapter4
-gongchandangxuanyan=py.get_pinyin(u"从这一事实中可以得出两个结论："
-                                 u"共产主义已经被欧洲的一切势力公认为一种势力；"
-                                 u"现在是共产党人向全世界公开说明自己的观点、"
-                                 u"自己的目的、自己的意图并且拿党自己的宣言来"
-                                 u"反驳关于共产主义幽灵的神话的时候了。为了这"
-                                 u"个目的，各国共产党人集会于伦敦，拟定了如下"
-                                 u"的宣言，用英文、法文、德文、意大利文、弗拉"
-                                 u"芒文和丹麦文公布于世。",' ')
+gongchandangxuanyan=py.get_pinyin(u"至今一切社会的历史都是阶级斗争的历史。"
+                                  u"自由民和奴隶、贵族和平民、领主和农奴、"
+                                  u"行会师傅和帮工，一句话，压迫者和被压"
+                                  u"迫者，始终处于相互对立的地位，进行不断"
+                                  u"的、有时隐蔽有时公开的斗争，而每一次斗争的结局是整",' ')
 a3=gongchandangxuanyan.count("a")
 b3=gongchandangxuanyan.count("b")
 c3=gongchandangxuanyan.count("c")
@@ -145,8 +142,41 @@ x3=gongchandangxuanyan.count("x")
 y3=gongchandangxuanyan.count("y")
 z3=gongchandangxuanyan.count("z")
 
+#chapter5
+gongchandangxuanyan=py.get_pinyin(u"个社会受到革命改造或者斗争的各阶级"
+                                  u"同归于尽。在过去的各个历史时代，我"
+                                  u"们几乎到处都可以看到社会完全划分为"
+                                  u"各个不同的等级，看到社会地位分成的"
+                                  u"多种多样的层次。在古罗马，有贵族、"
+                                  u"骑士、平民、奴隶，在中世纪，有",' ')
+a4=gongchandangxuanyan.count("a")
+b4=gongchandangxuanyan.count("b")
+c4=gongchandangxuanyan.count("c")
+d4=gongchandangxuanyan.count("d")
+e4=gongchandangxuanyan.count("e")
+f4=gongchandangxuanyan.count("f")
+g4=gongchandangxuanyan.count("g")
+h4=gongchandangxuanyan.count("h")
+i4=gongchandangxuanyan.count("i")
+j4=gongchandangxuanyan.count("j")
+k4=gongchandangxuanyan.count("k")
+l4=gongchandangxuanyan.count("l")
+m4=gongchandangxuanyan.count("m")
+n4=gongchandangxuanyan.count("n")
+o4=gongchandangxuanyan.count("o")
+p4=gongchandangxuanyan.count("p")
+q4=gongchandangxuanyan.count("q")
+r4=gongchandangxuanyan.count("r")
+s4=gongchandangxuanyan.count("s")
+t4=gongchandangxuanyan.count("t")
+u4=gongchandangxuanyan.count("u")
+v4=gongchandangxuanyan.count("v")
+w4=gongchandangxuanyan.count("w")
+x4=gongchandangxuanyan.count("x")
+y4=gongchandangxuanyan.count("y")
+z4=gongchandangxuanyan.count("z")
 
-
+"""
 data = {'Alphabet': ['a', 'b', 'c', 'd','e','f','g','h','i','j','k','l','m',
                      'n','o','p','q','r','s','t','u','v','w','x','y','z'],
         'Times': [a, b, c, d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z]}
@@ -155,15 +185,16 @@ data = {'Alphabet': ['a', 'b', 'c', 'd','e','f','g','h','i','j','k','l','m',
 df = pd.DataFrame(data)  # 这里默认的 index 就是 range(n)，n 是列表的长度
 print(df)
 df.to_csv("../count_alp.csv", encoding="gbk", index=False)
+"""
 
-
-dat={'a':[a,a1,a2,a3],'b':[b,b1,b2,b3],'c':[c,c1,c2,c3],'d':[d,d1,d2,d3],'e':[e,e1,e2,e3],'f':[f,f1,f2,f3],
-     'g': [g,g1,g2,g3], 'h': [h,h1,h2,h3], 'i': [i,i1,i2,i3], 'j': [j,j1,j2,j3], 'k': [k,k1,k2,k3], 'l': [l,l1,l2,l3],
-     'm': [m,m1,m2,m3], 'n': [n,n1,n2,n3], 'o': [o,o1,o2,o3], 'p': [p,p1,p2,p3], 'q': [q,q1,q2,q3], 'r': [r,r1,r2,r3],
-     's': [s,s1,s2,s3], 't': [t,t1,t2,t3], 'u': [u,u1,u2,u3], 'v': [v,v1,v2,v3], 'w': [w,w1,w2,w3], 'x': [x,x1,x2,x3],
-     'y': [y,y1,y2,y3], 'z': [z,z1,z2,z3]
+dat={'a':[a,a1,a2,a3,a4],'b':[b,b1,b2,b3,b4],'c':[c,c1,c2,c3,c4],'d':[d,d1,d2,d3,d4],'e':[e,e1,e2,e3,e4],'f':[f,f1,f2,f3,f4],
+     'g': [g,g1,g2,g3,g4], 'h': [h,h1,h2,h3,h4], 'i': [i,i1,i2,i3,i4], 'j': [j,j1,j2,j3,j4], 'k': [k,k1,k2,k3,k4], 'l': [l,l1,l2,l3,l4],
+     'm': [m,m1,m2,m3,m4], 'n': [n,n1,n2,n3,n4], 'o': [o,o1,o2,o3,o4], 'p': [p,p1,p2,p3,p4], 'q': [q,q1,q2,q3,q4], 'r': [r,r1,r2,r3,r4],
+     's': [s,s1,s2,s3,s4], 't': [t,t1,t2,t3,t4], 'u': [u,u1,u2,u3,u4], 'v': [v,v1,v2,v3,v4], 'w': [w,w1,w2,w3,w4], 'x': [x,x1,x2,x3,x4],
+     'y': [y,y1,y2,y3,y4], 'z': [z,z1,z2,z3,y4]
      }
 dff = pd.DataFrame(dat)
+print(dff)
 #dfData=dff.corr()
 #print(dfData)
 dff.to_csv("../count_alp_f.csv", encoding="gbk", index=False)
@@ -178,7 +209,6 @@ from pyforest import *
 
 data=pd.read_csv("../count_alp_f.csv",encoding='gbk')
 data.head()
-print(data)
 plt.rcParams['font.sans-serif']=['SimHei']
 plt.rcParams['axes.unicode_minus'] =False #减号unicode编码
 corr =data.corr()
