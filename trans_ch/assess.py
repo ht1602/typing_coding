@@ -12,7 +12,8 @@ data=pd.DataFrame(data.drop(['v'],axis=1))
 n = list(data.columns)
 # 最优指标，(x-min)/(max-min)
 # 最劣指标 (max-x)/(max-min)
-# 如果指标体系存在最优指标和最劣指标，采用下面的形式
+# 如果指标体系存在最优指标和最劣指标，采用混合的形式
+#
 for i in n:
     # 获取各个指标的最大值和最小值
     Max = np.max(data[i])
@@ -26,6 +27,7 @@ for i in n:
     # 计算某一指标占比
     data[i] = data[i] / Sum
 print(data)
+
 #计算信息熵e和信息效用值d
 # 统计的文章段数
 m = len(data)
@@ -38,7 +40,6 @@ for i in n:
 
 # 转换为数组形式
 E = np.array(E)
-
 # 计算效用价值
 D = 1 - E
 #计算指标权重
@@ -48,7 +49,7 @@ W = np.array([W])
 
 # 保存 权重 为excel格式
 W1 = pd.DataFrame(W.T, index = n)
-W1.to_csv('../权重1.csv')
+W1.to_csv('../权重1.csv',encoding="gbk")
 
 #计算样本评价
 U = []
@@ -89,4 +90,14 @@ U['综合得分排名'] = U['综合得分'].rank(ascending=False)
 # 保存为excel文件
 U.to_csv('../综合得分.csv')
 
+#计算5段文章的均值，由于5次字数均未100，故采用数字平均值
+# -*- coding:utf-8 -*-
+import csv
+import numpy as np
+
+data =pd.read_csv("../综合得分.csv",encoding='utf-8')   # 分隔符方式
+totalsum=data['综合得分'].sum()
+
+
+print('全拼输入法的最终得分为:', totalsum/5)  # 输出均值
 
