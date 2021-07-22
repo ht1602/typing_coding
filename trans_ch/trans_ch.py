@@ -221,4 +221,3 @@ ax=sns.heatmap(corr, vmax=.8, square=True, annot=True)#画热力图   annot=True
 plt.xticks(fontsize=20)
 plt.yticks(fontsize=20)
 plt.show()
-

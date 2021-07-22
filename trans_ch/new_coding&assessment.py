@@ -102,14 +102,14 @@ def decode_str(huffman_str, char_frequency, codes):
 
 
 if __name__ == '__main__':
-    text = input('The text to encode:')
-    """
+    #text = input('The text to encode:')
+
     text=py.get_pinyin("u一个幽灵，共产主义的幽灵，在欧洲游荡。"
                                   u"为了对这个幽灵进行神圣的围剿，旧欧洲"
                                   u"的一切势力，教皇和沙皇、梅特涅和基佐、"
                                   u"法国的激进派和德国的警察，都联合起来了。"
                                   u"有哪一个反对党不被它的当政的敌人骂为共产党呢？又",' ')
-                                  """
+
     char_frequency = count_frequency(text)
     nodes = create_nodes([item[1] for item in char_frequency])
     root = create_huffman_tree(nodes)
