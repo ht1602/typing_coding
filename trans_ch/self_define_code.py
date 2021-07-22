@@ -216,7 +216,6 @@ for i in n:
     E.append(e)
 # 转换为数组形式
 E = np.array(E)
-print(E)
 # 计算效用价值
 D = 1 - E
 #计算指标权重
@@ -265,14 +264,14 @@ for i in n:
 U['综合得分排名'] = U['综合得分'].rank(ascending=False)
 
 # 保存为excel文件
-U.to_csv('../综合得分.csv')
+U.to_csv('../综合得分_new.csv')
 
 #计算5段文章的均值，由于5次字数均未100，故采用数字平均值
 # -*- coding:utf-8 -*-
 import csv
 import numpy as np
 
-data =pd.read_csv("../综合得分.csv",encoding='utf-8')   # 分隔符方式
+data =pd.read_csv("../综合得分_new.csv",encoding='utf-8')   # 分隔符方式
 var_new=data['综合得分'].var()
 
 print('新编码的均衡性得分为:', var_new)  # 输出均值

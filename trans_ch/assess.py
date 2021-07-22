@@ -64,7 +64,6 @@ for i in n:
     E.append(e)
 # 转换为数组形式
 E = np.array(E)
-print(E)
 # 计算效用价值
 D = 1 - E
 #计算指标权重
