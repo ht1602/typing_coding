@@ -28,46 +28,7 @@ def encode(s):
     s.replace("z","w")
     return s
 
-def encrypt(key, s): 
-    b = bytearray(str(s).encode("gbk")) 
-    n = len(b) # 求出 b 的字节数 
-    c = bytearray(n*2) 
-    j = 0 
-    for i in range(0, n): 
-        b1 = b[i] 
-        b2 = b1 ^ key # b1 = b2^ key 
-        c1 = b2 % 16 
-        c2 = b2 // 16 # b2 = c2*16 + c1 
-        c1 = c1 + 97
-        c2 = c2 + 97 # c1,c2都是0~15之间的数,加上97就变成了a-p 的字符的编码
-        c[j] = c1 
-        c[j+1] = c2 
-        j = j+2 
-    return c.decode("gbk") 
-
-def decrypt(key, s): 
-    c = bytearray(str(s).encode("gbk")) 
-    n = len(c) # 计算 b 的字节数 
-    if n % 2 != 0 : 
-        return "" 
-    n = n // 2 
-    b = bytearray(n) 
-    j = 0 
-    for i in range(0, n): 
-        c1 = c[j] 
-        c2 = c[j+1] 
-        j = j+2 
-        c1 = c1 - 97
-        c2 = c2 - 97
-        b2 = c2*16 + c1 
-        b1 = b2^ key 
-        b[i]= b1 
-    try: 
-        return b.decode("gbk") 
-    except: 
-        return "failed"
-
-key = 30
+print("输入与全拼输入一样的中文时，新的编码为：")
 pinyin1=py.get_pinyin(u"一个幽灵，共产主义的幽灵，在欧洲游荡。"
                                   u"为了对这个幽灵进行神圣的围剿，旧欧洲"
                                   u"的一切势力，教皇和沙皇、梅特涅和基佐、"
