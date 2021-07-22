@@ -49,7 +49,7 @@ W = np.array([W])
 
 # 保存 权重 为excel格式
 W1 = pd.DataFrame(W.T, index = n)
-W1.to_csv('../权重1.csv',encoding="gbk")
+W1.to_csv('../权重1.csv')
 
 #计算样本评价
 U = []
@@ -96,8 +96,8 @@ import csv
 import numpy as np
 
 data =pd.read_csv("../综合得分.csv",encoding='utf-8')   # 分隔符方式
-totalsum=data['综合得分'].sum()
+average_sum=data['综合得分'].mean()
 
 
-print('全拼输入法的最终得分为:', totalsum/5)  # 输出均值
+print('全拼输入法的最终得分为:', average_sum)  # 输出均值
 
