@@ -121,8 +121,8 @@ import csv
 import numpy as np
 
 data =pd.read_csv("../综合得分.csv",encoding='utf-8')   # 分隔符方式
-average_sum=data['综合得分'].mean()
+var_quanpin=data['综合得分'].var()
 
 
-print('全拼输入法的最终得分为:', average_sum)  # 输出均值
+print('全拼输入法的均衡性得分为:',var_quanpin)  # 输出均值
 
