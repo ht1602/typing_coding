@@ -1,3 +1,4 @@
+#3.全拼基础上编码，然后评价
 from xpinyin import Pinyin
 import pandas as pd
 py=Pinyin()
